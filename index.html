@@ -79,7 +79,7 @@ var SITE={
   name:"شاليهات",
   phone:"0798199201",          /* رقم الهاتف المحلي */
   whatsapp:"962798199201",     /* رقم واتساب بالصيغة الدولية بدون + */
-  mapUrl:"https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%AC%D9%88%D9%81%D8%A9+%D8%A7%D9%84%D8%A8%D8%AD%D8%B1+%D8%A7%D9%84%D9%85%D9%8A%D8%AA",
+  mapUrl:"https://maps.app.goo.gl/tKfxFBh4HP6zoUp98",
   address:"طريق البحر الميت - الجوفة الجديدة",
   currency:"دينار"
 };
@@ -108,7 +108,7 @@ function card(c){
   (c.daily?'<div class="prices"><div class="price"><small>لليوم</small><strong>'+c.daily+'</strong> '+SITE.currency+'</div><div class="price"><small>للأسبوع</small><strong>'+c.weekly+'</strong> '+SITE.currency+'</div></div>':'')+
   '<div class="book"><div><label>تاريخ الوصول</label><input type="date" class="in"></div><div><label>تاريخ المغادرة</label><input type="date" class="out"></div>'+
   '<div class="total" aria-live="polite">اختر تاريخ الوصول والمغادرة</div>'+
-  '<a class="btn solid wa" href="#" target="_blank" rel="noopener">احجز عبر واتساب</a></div></div></article>';
+  '<a class="btn solid wa" href="#" target="_blank" rel="noopener">احجز عبر واتساب</a></div><p class="loc" style="margin:14px 0 0"><a href="'+(c.mapUrl||SITE.mapUrl)+'" target="_blank" rel="noopener">📍 الموقع على الخريطة</a></p></div></article>';
 }
 $('list').innerHTML=CHALETS.map(card).join('');
 
