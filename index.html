@@ -54,6 +54,9 @@ footer .grid{display:grid;gap:8px}
 footer small{color:var(--mute)}
 footer .yt{display:inline-block;width:44px;margin-top:6px;line-height:0}
 footer .yt:hover{opacity:.85}
+footer .soc{display:flex;gap:12px;margin-top:6px}
+footer .soc .yt{margin-top:0}
+footer .xi svg{border:1px solid var(--line);border-radius:5px}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 @media (min-width:700px){.chalet{display:grid;grid-template-columns:1.1fr 1fr}.gwrap,.gallery{height:100%}.gallery>*{height:100%;min-height:300px}}
 </style>
@@ -71,7 +74,7 @@ footer .yt:hover{opacity:.85}
 <strong>تواصل معنا</strong>
 <div>الهاتف: <a id="phoneLink" href="#" dir="ltr"></a></div>
 <div>واتساب: <a id="waLink" href="#" dir="ltr">راسلنا</a></div>
-<a class="yt" href="https://youtube.com/@18zaid" target="_blank" rel="noopener" aria-label="قناتنا على يوتيوب" title="قناتنا على يوتيوب"><svg viewBox="0 0 28 20" width="44" height="31" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg></a>
+<div class="soc"><a class="yt" href="https://youtube.com/@18zaid" target="_blank" rel="noopener" aria-label="قناتنا على يوتيوب" title="قناتنا على يوتيوب"><svg viewBox="0 0 28 20" width="44" height="31" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg></a><a class="yt xi" href="https://x.com/khaldon120" target="_blank" rel="noopener" aria-label="حسابنا على إكس" title="حسابنا على إكس"><svg viewBox="0 0 28 20" width="44" height="31" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="20" rx="5" fill="#000"/><g transform="translate(8.2 2.6) scale(.5)"><path fill="#fff" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></g></svg></a></div>
 </div></footer>
 
 <script>
